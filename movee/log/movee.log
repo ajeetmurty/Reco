@@ -1,9 +1,0 @@
-2014-01-29 04:34:03,989 [main] INFO  ajeetmurty.reco.movee.Main.doSomething:18 - start
-2014-01-29 04:34:03,993 [main] INFO  ajeetmurty.reco.movee.Main.doSomething:20 - doing info
-2014-01-29 04:34:03,993 [main] INFO  ajeetmurty.reco.movee.Main.doSomething:24 - stop
-2014-01-29 04:34:55,710 [main] INFO  ajeetmurty.reco.movee.Main.doSomething:18 - start
-2014-01-29 04:34:55,714 [main] INFO  ajeetmurty.reco.movee.Main.doSomething:20 - doing info
-2014-01-29 04:34:55,714 [main] INFO  ajeetmurty.reco.movee.Main.doSomething:24 - stop
-2014-01-29 04:35:34,219 [main] INFO  ajeetmurty.reco.movee.Main.doSomething:18 - start
-2014-01-29 04:35:34,223 [main] INFO  ajeetmurty.reco.movee.Main.doSomething:20 - doing info
-2014-01-29 04:35:34,223 [main] INFO  ajeetmurty.reco.movee.Main.doSomething:24 - stop
