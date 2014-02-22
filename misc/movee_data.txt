@@ -1,0 +1,27 @@
+movee db schema
+
+movie - 
+	total - 1682
+	attributes - 
+		movieid	
+		moviename	
+		releasedate	
+		imdblink	
+		genres	
+		rating	
+		prediction
+
+profile - 
+	total - 942
+	attributes - 
+		userid	
+		genres	
+
+prs - 
+	total - 100000
+	attributes -
+		userid	
+		movieid	
+		rating	
+		rate_date
+

@@ -1,0 +1,31 @@
+
+datasets - http://grouplens.org/datasets/movielens/
+
+sample data - 
+
+movieid		moviename			action	adventure	animation	comedy
+901			Toy Story (1995)	0		0			1			1
+902			GoldenEye (1995)	1		1			0			0
+903			Four Rooms (1995)	0		0			0			1
+904			Get Shorty (1995)	0		1			0			1
+
+
+userid		movieid		rating
+10			901			2
+10			902			4
+10			903			3
+10			904			5
+11			901			1
+11			902			0
+11			903			3
+11			904			2
+12			901			5
+12			902			3
+12			903			2
+12			904			0
+13			901			1
+13			902			4
+13			903			3
+13			904			3
+
+
