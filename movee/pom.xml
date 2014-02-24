@@ -40,7 +40,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>ajeetmurty.reference.mapreduce.logcount.LogCount</mainClass>
+							<mainClass>ajeetmurty.reco.movee.PRSmain</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
