@@ -1,0 +1,6 @@
+2014-02-23 03:49:33,976 [main] INFO  ajeetmurty.reco.etl.Main.doSomething:18 - start
+2014-02-23 03:49:33,981 [main] INFO  ajeetmurty.reco.etl.Main.doSomething:20 - doing info
+2014-02-23 03:49:33,981 [main] INFO  ajeetmurty.reco.etl.Main.doSomething:24 - stop
+2014-02-23 23:51:25,727 [main] INFO  ajeetmurty.reco.etl.Main.mergeMovielensData:18 - start
+2014-02-23 23:51:25,731 [main] INFO  ajeetmurty.reco.etl.Main.mergeMovielensData:20 - doing info
+2014-02-23 23:51:25,732 [main] INFO  ajeetmurty.reco.etl.Main.mergeMovielensData:24 - stop
