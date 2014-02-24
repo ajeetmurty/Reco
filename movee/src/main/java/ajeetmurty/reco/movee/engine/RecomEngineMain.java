@@ -59,24 +59,29 @@ public class RecomEngineMain {
 	}
 
 	public static void calculateCorrelations(String genreMain) {
-		ArrayList alstMain = DBReader.getMovies(genreMain);
+		//get all movies for a specific genre X.
+		ArrayList listMoviesPerGenre = DBReader.getMovies(genreMain);
+		
+		//there are 943 users in the movielens dataset. lets start with user A.
 		for (int i = 1; i < 944; i++) {
 			ArrayList alstUser = new ArrayList();
 			ArrayList alstFetch = new ArrayList();
 			float user = 0;
 			float fetch = 0;
-			ArrayList alstTemp = DBReader.getMovies(i, genreMain);
+			
+			//get all movies for user A belonging to a genre X. 
+			ArrayList listMoviesPerUserPerGenre = DBReader.getMovies(i, genreMain);
 
 			// find similar ratings between user and database
-			for (int x = 0; x < alstMain.size(); x++) {
-				movieObj objMain = (movieObj) alstMain.get(x);
-				for (int y = 0; y < alstTemp.size(); y++) {
-					movieObj objTemp = (movieObj) alstTemp.get(y);
-					if (objMain.getId() == objTemp.getId() && objMain.getRating() != 99) {
-						alstUser.add(Integer.valueOf(objMain.getRating()));
-						user = user + objMain.getRating();
-						alstFetch.add(Integer.valueOf(objTemp.getRating()));
-						fetch = fetch + objTemp.getRating();
+			for (int x = 0; x < listMoviesPerGenre.size(); x++) {
+				movieObj moviePerGenre = (movieObj) listMoviesPerGenre.get(x);
+				for (int y = 0; y < listMoviesPerUserPerGenre.size(); y++) {
+					movieObj moviePerUserPerGenre = (movieObj) listMoviesPerUserPerGenre.get(y);
+					if (moviePerGenre.getId() == moviePerUserPerGenre.getId() && moviePerGenre.getRating() != 99) {
+						alstUser.add(Integer.valueOf(moviePerGenre.getRating()));
+						user = user + moviePerGenre.getRating();
+						alstFetch.add(Integer.valueOf(moviePerUserPerGenre.getRating()));
+						fetch = fetch + moviePerUserPerGenre.getRating();
 					}
 				}
 			}
