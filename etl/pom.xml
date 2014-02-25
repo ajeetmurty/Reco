@@ -39,7 +39,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>ajeetmurty.reco.etl</mainClass>
+							<mainClass>ajeetmurty.reco.etl.Main</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
